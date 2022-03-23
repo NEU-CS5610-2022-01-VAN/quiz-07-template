@@ -42,17 +42,17 @@ const itemsInitialState = [
   },
   {
     id: 6,
-    name: 'Kristin Watson',
-    subTitle: 'Human Resources',
+    name: "Kristin Watson",
+    subTitle: "Human Resources",
     imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
     id: 7,
-    name: 'Emily Wilson',
-    subTitle: 'User Experience',
+    name: "Emily Wilson",
+    subTitle: "User Experience",
     imageUrl:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
     id: 8,
@@ -63,17 +63,17 @@ const itemsInitialState = [
   },
   {
     id: 9,
-    name: 'Fabricio Andrews',
-    subTitle: 'Human Resources',
+    name: "Fabricio Andrews",
+    subTitle: "Human Resources",
     imageUrl:
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
   {
     id: 10,
-    name: 'Angela Smith',
-    subTitle: 'User Experience',
+    name: "Angela Smith",
+    subTitle: "User Experience",
     imageUrl:
-      'https://images.unsplash.com/photo-1506980595904-70325b7fdd90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+      "https://images.unsplash.com/photo-1506980595904-70325b7fdd90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
   },
 ];
 
@@ -82,12 +82,8 @@ function App() {
 
   return (
     <div className="item-picker-wrapper p-5 m-5">
-      <Header
-        title="Northeastern University"
-      />
-      <ItemPicker
-        items={items}
-      />
+      <Header title="Northeastern University" />
+      <ItemPicker items={items} />
       <ItemsSelected />
     </div>
   );
