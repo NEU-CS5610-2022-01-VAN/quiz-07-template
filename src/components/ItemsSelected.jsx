@@ -6,7 +6,11 @@ export default function ItemsSelected({ selectedItems }) {
       <ul className="divide-y divide-gray-200">
         {selectedItems &&
           selectedItems.map((item, i) => (
-            <li className="py-4" key={`selected-${i}-${item.name}`}>
+            <li
+              className="py-4"
+              key={`selected-${i}-${item.name}`}
+              aria-label={`selected-${item.name}`}
+            >
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0">
                   <img
@@ -26,6 +30,7 @@ export default function ItemsSelected({ selectedItems }) {
                 <div className="pr-5">
                   <button
                     type="button"
+                    aria-label={`Delete ${item.name}`}
                     className="inline-flex items-center px-2.5 py-1.5 border border-transparent text-xs font-medium rounded text-red-700 bg-red-100 hover:bg-red-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                     onClick={(e) => {
                       // TODO
