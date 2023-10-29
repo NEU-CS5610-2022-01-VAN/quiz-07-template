@@ -6,7 +6,7 @@ import App from "./App";
 test("renders the App with initial state", () => {
   render(<App />);
 
-  expect(screen.getByText("Gryffindor (0)")).toBeInTheDocument();
+  expect(screen.getByText("Northeastern University (0)")).toBeInTheDocument();
 });
 
 test("renders header counter", () => {
@@ -15,12 +15,12 @@ test("renders header counter", () => {
   const addButton = screen.getByLabelText(`Add James Carmona`);
   userEvent.click(addButton);
 
-  expect(screen.getByText("Gryffindor (1)")).toBeInTheDocument();
+  expect(screen.getByText("Northeastern University (1)")).toBeInTheDocument();
 
   const secondAddButton = screen.getByLabelText(`Add Leslie Abbott`);
   userEvent.click(secondAddButton);
 
-  expect(screen.getByText("Gryffindor (2)")).toBeInTheDocument();
+  expect(screen.getByText("Northeastern University (2)")).toBeInTheDocument();
 });
 
 test("select multiple items and then delete them", async () => {
@@ -72,10 +72,10 @@ test("search functionality filters the item list", () => {
 test("selects all items when 'Add All' button is clicked", () => {
   render(<App />);
 
-  expect(screen.getByText("Gryffindor (0)")).toBeInTheDocument();
+  expect(screen.getByText("Northeastern University (0)")).toBeInTheDocument();
 
   const addAllButton = screen.getByRole("button", { name: "Add All" });
   userEvent.click(addAllButton);
 
-  expect(screen.getByText("Gryffindor (10)")).toBeInTheDocument();
+  expect(screen.getByText("Northeastern University (10)")).toBeInTheDocument();
 });
